@@ -1,4 +1,4 @@
-package com.atguigu.java2;
+
 /*
  * 单例模式的懒汉式实现
  * 
