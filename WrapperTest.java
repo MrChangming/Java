@@ -1,4 +1,3 @@
-package one;
 
 import org.junit.Test;
 /**
@@ -7,25 +6,25 @@ import org.junit.Test;
 * <p>Description: </p>  
 * @author MrChangMing
 * @version
-* @date 2022Äê6ÔÂ26ÈÕ
+* @date 2022å¹´6æœˆ26æ—¥
  */
 /*
- * °ü×°ÀàµÄÊ¹ÓÃ:
- * 1.javaÌá¹©ÁË8ÖÖ»ù±¾Êý¾ÝÀàÐÍ¶ÔÓ¦µÄ°ü×°Àà£¬Ê¹µÃ»ù±¾Êý¾ÝÀàÐÍµÄ±äÁ¿¾ßÓÐÀàµÄÌØÕ÷
+ * åŒ…è£…ç±»çš„ä½¿ç”¨:
+ * 1.javaæä¾›äº†8ç§åŸºæœ¬æ•°æ®ç±»åž‹å¯¹åº”çš„åŒ…è£…ç±»ï¼Œä½¿å¾—åŸºæœ¬æ•°æ®ç±»åž‹çš„å˜é‡å…·æœ‰ç±»çš„ç‰¹å¾
  * 
- * 2.ÕÆÎÕµÄ£º»ù±¾Êý¾ÝÀàÐÍ¡¢°ü×°Àà¡¢StringÈýÕßÖ®¼äµÄÏà»¥×ª»»
+ * 2.æŽŒæ¡çš„ï¼šåŸºæœ¬æ•°æ®ç±»åž‹ã€åŒ…è£…ç±»ã€Stringä¸‰è€…ä¹‹é—´çš„ç›¸äº’è½¬æ¢
  * 
  */
 public class WrapperTest {
 	
-	//StringÀàÐÍ --->»ù±¾Êý¾ÝÀàÐÍ¡¢°ü×°Àà£ºµ÷ÓÃ°ü×°ÀàµÄparseXxx(String s)
+	//Stringç±»åž‹ --->åŸºæœ¬æ•°æ®ç±»åž‹ã€åŒ…è£…ç±»ï¼šè°ƒç”¨åŒ…è£…ç±»çš„parseXxx(String s)
 	@Test
 	public void test5(){
 		String str1 = "123";
-		//´íÎóµÄÇé¿ö£º
+		//é”™è¯¯çš„æƒ…å†µï¼š
 //		int num1 = (int)str1;
 //		Integer in1 = (Integer)str1;
-		//¿ÉÄÜ»á±¨NumberFormatException
+		//å¯èƒ½ä¼šæŠ¥NumberFormatException
 		int num2 = Integer.parseInt(str1);
 		System.out.println(num2 + 1);
 		
@@ -34,14 +33,14 @@ public class WrapperTest {
 		System.out.println(b1);
 	}
 	
-	//»ù±¾Êý¾ÝÀàÐÍ¡¢°ü×°Àà--->StringÀàÐÍ£ºµ÷ÓÃStringÖØÔØµÄvalueOf(Xxx xxx)
+	//åŸºæœ¬æ•°æ®ç±»åž‹ã€åŒ…è£…ç±»--->Stringç±»åž‹ï¼šè°ƒç”¨Stringé‡è½½çš„valueOf(Xxx xxx)
 	@Test
 	public void test4(){
 		
 		int num1 = 10;
-		//·½Ê½1£ºÁ¬½ÓÔËËã
+		//æ–¹å¼1ï¼šè¿žæŽ¥è¿ç®—
 		String str1 = num1 + "";
-		//·½Ê½2£ºµ÷ÓÃStringµÄvalueOf(Xxx xxx)
+		//æ–¹å¼2ï¼šè°ƒç”¨Stringçš„valueOf(Xxx xxx)
 		float f1 = 12.3f;
 		String str2 = String.valueOf(f1);//"12.3"
 		
@@ -53,25 +52,25 @@ public class WrapperTest {
 	}
 	
 	/*
-	 * JDK 5.0 ÐÂÌØÐÔ£º×Ô¶¯×°Ïä Óë×Ô¶¯²ðÏä
+	 * JDK 5.0 æ–°ç‰¹æ€§ï¼šè‡ªåŠ¨è£…ç®± ä¸Žè‡ªåŠ¨æ‹†ç®±
 	 */
 	@Test
 	public void test3(){
 //		int num1 = 10;
-//		//»ù±¾Êý¾ÝÀàÐÍ-->°ü×°ÀàµÄ¶ÔÏó
+//		//åŸºæœ¬æ•°æ®ç±»åž‹-->åŒ…è£…ç±»çš„å¯¹è±¡
 //		method(num1);
 		
-		//×Ô¶¯×°Ïä£º»ù±¾Êý¾ÝÀàÐÍ --->°ü×°Àà
+		//è‡ªåŠ¨è£…ç®±ï¼šåŸºæœ¬æ•°æ®ç±»åž‹ --->åŒ…è£…ç±»
 		int num2 = 10;
-		Integer in1 = num2;//×Ô¶¯×°Ïä
+		Integer in1 = num2;//è‡ªåŠ¨è£…ç®±
 		
 		boolean b1 = true;
-		Boolean b2 = b1;//×Ô¶¯×°Ïä
+		Boolean b2 = b1;//è‡ªåŠ¨è£…ç®±
 		
-		//×Ô¶¯²ðÏä£º°ü×°Àà--->»ù±¾Êý¾ÝÀàÐÍ
+		//è‡ªåŠ¨æ‹†ç®±ï¼šåŒ…è£…ç±»--->åŸºæœ¬æ•°æ®ç±»åž‹
 		System.out.println(in1.toString());
 		
-		int num3 = in1;//×Ô¶¯²ðÏä
+		int num3 = in1;//è‡ªåŠ¨æ‹†ç®±
 		
 	}
 	
@@ -79,7 +78,7 @@ public class WrapperTest {
 		System.out.println(obj);
 	}
 	
-	//°ü×°Àà--->»ù±¾Êý¾ÝÀàÐÍ:µ÷ÓÃ°ü×°ÀàXxxµÄxxxValue()
+	//åŒ…è£…ç±»--->åŸºæœ¬æ•°æ®ç±»åž‹:è°ƒç”¨åŒ…è£…ç±»Xxxçš„xxxValue()
 	@Test
 	public void test2(){
 		Integer in1 = new Integer(12);
@@ -93,7 +92,7 @@ public class WrapperTest {
 		System.out.println(f2 + 1);
 	}
 	
-	//»ù±¾Êý¾ÝÀàÐÍ --->°ü×°Àà£ºµ÷ÓÃ°ü×°ÀàµÄ¹¹ÔìÆ÷
+	//åŸºæœ¬æ•°æ®ç±»åž‹ --->åŒ…è£…ç±»ï¼šè°ƒç”¨åŒ…è£…ç±»çš„æž„é€ å™¨
 	@Test
 	public void test1(){
 		
@@ -105,7 +104,7 @@ public class WrapperTest {
 		Integer in2 = new Integer("123");
 		System.out.println(in2.toString());
 		
-		//±¨Òì³£
+		//æŠ¥å¼‚å¸¸
 //		Integer in3 = new Integer("123abc");
 //		System.out.println(in3.toString());
 		
