@@ -1,4 +1,4 @@
-package atguigu.java;
+package java;
 
     public class HelloWorld {
 
