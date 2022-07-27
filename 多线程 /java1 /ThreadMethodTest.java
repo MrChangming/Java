@@ -1,4 +1,4 @@
-package atguigu.java;
+package java;
 
 /**
  * 测试Thread中的常用方法：
