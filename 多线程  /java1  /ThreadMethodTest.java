@@ -1,4 +1,4 @@
-package java;
+package java1;
 
 /**
  * 测试Thread中的常用方法：
