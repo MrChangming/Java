@@ -1,4 +1,4 @@
-package atguigu.java;
+package java1;
 
 /**
  * 创建多线程的方式二：实现Runnable接口
