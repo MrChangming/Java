@@ -1,4 +1,4 @@
-package com.atguigu.java;
+package java;
 
 import org.junit.Test;
 
@@ -7,8 +7,9 @@ import java.util.Date;
 /**
  * JDK 8之前日期和时间的API测试
  *
- * @author shkstart
- * @create 2019 下午 4:30
+ * @author MrChangMing
+ * @Description
+ * @data 2022/7/29
  */
 public class DateTimeTest {
 
