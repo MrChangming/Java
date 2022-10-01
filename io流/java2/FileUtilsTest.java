@@ -1,4 +1,4 @@
-package com.atguigu.java;
+package com.atguigu.java2;
 
 import org.apache.commons.io.FileUtils;
 
